@@ -1,56 +1,89 @@
 <html>
     <head>
+        <title>David DECHAUX</title>
         <style>
             body {
                 background-color: #1D1D1D;
             }
-            .small-size{
-                height: 90px;
-                width: 90px;
+            a{
+                width: 100px;
+                height: 100px;
             }
+
             .box {
                 border: 1px solid white;
+                height: 100px;
+                width: 100px;
                 margin-bottom: 20px;
-                padding: 10px;
-                
             }
-            .center-h{
+            .box:hover {
+                width: 350px;
+            }
+            .dont-move:hover{
+                    width: 100px;
+            }            
+
+            .center{
                 width: 50%;
                 margin: 0 auto;
                 position: relative;
-            }
-            .center-v {
+
                 position: relative;
                 top: 50%;
                 transform: translateY(50%);
             }
-            .center-inside{
-                margin-left: 10px;
+
+            .logo{
+                background-size: 90%;
+                background-repeat: no-repeat;
+                background-position: center; 
             }
-            img{
-                height: 100%;
+
+            .linkedin{
+                background-image: url("linkedin.png");
+            }
+            .linkedin:hover{
+                background-image: url("linkedin-big.png");
+            }
+
+            .github{
+                background-image: url("github.png");
+            }
+            .github:hover{
+                background-image: url("github-big.png");
+            }
+            
+            .resume{
+                background-image: url("resume.png");
+                background-size: 70%;
+            }
+
+            .mail{
+                background-image: url("mail.png");
             }
         </style>
     </head>
     <body>
-        <div class="center-h">
-            <div class="center-v">
-                <div id="linkedin" class="box small-size">
-                    <a href="https://www.linkedin.com/in/david-dechaux-118ab154/" target="_blank">
-                        <img src="linkedin.png">
-                    </a>
+        <div class="center">
+            <a href="https://www.linkedin.com/in/david-dechaux-118ab154/" target="_blank" >
+                <div class="box logo linkedin">
                 </div>
-                <div id="github" class="box small-size">
-                    <a href="https://github.com/daviddechaux" target="_blank">    
-                        <img src="github.png">
-                    </a>
+            </a>
+
+            <a href="https://github.com/daviddechaux" target="_blank">
+                <div class="box logo github">
                 </div>
-                <div id="resume" class="box small-size">
-                    <a href="" target="_blank">    
-                        <img src="resume.png" class="center-inside">
-                    </a>
+            </a>
+            
+            <a href="" target="_blank" />
+                <div class="box logo resume dont-move">
                 </div>
-            </div>
+            </a>
+
+            <a href="mailto:daviddechaux.job@pm.me" target="_blank">
+                <div class="box logo mail dont-move">
+                </div>
+            </a>
         </div>
     </body>
 </html>

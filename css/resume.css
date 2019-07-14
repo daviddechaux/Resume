@@ -1,0 +1,44 @@
+h1, h2, h3, h4 {
+    color: #244061;
+}
+
+h2{
+    border-bottom: 1px solid #244061;
+}
+
+h3{
+    margin-bottom: 0;
+}
+
+p{
+    margin: 0;
+}
+
+ul{
+    padding-left: 20px;
+}
+
+.mission{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.techno, .equipe{
+    font-style: italic;
+}
+
+/* .date{
+    display: none;
+} */
+
+.exp {
+    padding: 5px 0 0 5px;
+    max-width: 80%;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-image: linear-gradient(45deg, #244061, #FFF) 1;
+  }
+
+
+
+  

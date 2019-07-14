@@ -10,25 +10,24 @@
                 height: 100px;
             }
 
+            .resizable-box{
+                width: 100px;
+                -webkit-transition-property: width;
+                -webkit-transition-duration: 0.5s;
+            }
+            .resizable-box:hover {
+                width: 350px;
+            }
             .box {
                 border: 1px solid white;
                 height: 100px;
                 width: 100px;
                 margin-bottom: 20px;
             }
-            .box:hover {
-                width: 350px;
-            }
-            .dont-move:hover{
-                    width: 100px;
-            }            
 
             .center{
                 width: 50%;
                 margin: 0 auto;
-                position: relative;
-
-                position: relative;
                 top: 50%;
                 transform: translateY(50%);
             }
@@ -40,48 +39,48 @@
             }
 
             .linkedin{
-                background-image: url("linkedin.png");
+                background-image: url("img/linkedin.png");
             }
             .linkedin:hover{
-                background-image: url("linkedin-big.png");
+                background-image: url("img/linkedin-big.png");
             }
 
             .github{
-                background-image: url("github.png");
+                background-image: url("img/github.png");
             }
             .github:hover{
-                background-image: url("github-big.png");
+                background-image: url("img/github-big.png");
             }
             
             .resume{
-                background-image: url("resume.png");
+                background-image: url("img/resume.png");
                 background-size: 70%;
             }
 
             .mail{
-                background-image: url("mail.png");
+                background-image: url("img/mail.png");
             }
         </style>
     </head>
     <body>
         <div class="center">
             <a href="https://www.linkedin.com/in/david-dechaux-118ab154/" target="_blank" >
-                <div class="box logo linkedin">
+                <div class="box logo resizable-box linkedin">
                 </div>
             </a>
 
             <a href="https://github.com/daviddechaux" target="_blank">
-                <div class="box logo github">
+                <div class="box logo resizable-box github">
                 </div>
             </a>
             
             <a href="" target="_blank" />
-                <div class="box logo resume dont-move">
+                <div class="box logo resume">
                 </div>
             </a>
 
             <a href="mailto:daviddechaux.job@pm.me" target="_blank">
-                <div class="box logo mail dont-move">
+                <div class="box logo mail">
                 </div>
             </a>
         </div>
